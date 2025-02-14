@@ -1,0 +1,8 @@
+:root {
+  --colorTextPrimary: #212121;
+  --colorTextSecondary: #757575;
+  --colorTextThird: #fff;
+  --colorLogoNavigation: #2196f3;
+  --bgColor: #2f303a;
+  --addressColor: rgba(255, 255, 255, 0.6);
+}
