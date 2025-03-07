@@ -1,3 +1,4 @@
+/*root*/
 :root {
   --colorTextPrimary: #212121;
   --colorTextSecondary: #757575;
@@ -7,4 +8,34 @@
   --addressColor: rgba(255, 255, 255, 0.6);
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
+}
+/* body */
+body {
+  font-family: var(--font-family);
+  line-height: 1.71;
+}
+.logo {
+  font-family: var(--second-family);
+}
+.hero-title {
+  line-height: 1, 36;
+}
+
+.advantages-item-text {
+  line-height: 1, 71;
+}
+/* portfolio */
+.projects-button {
+  line-height: 1, 62;
+}
+.projects-title {
+  line-height: 2;
+}
+.projects-text {
+  line-height: 1, 87;
+}
+
+/* footer */
+.address-list {
+  line-height: 1, 71;
 }
