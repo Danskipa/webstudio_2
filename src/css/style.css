@@ -13,29 +13,100 @@
 body {
   font-family: var(--font-family);
   line-height: 1.71;
+  font-size: 16px;
+  color: var(--colorTextPrimary);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  /* logo and navigation */
 }
 .logo {
   font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--colorLogoNavigation);
 }
+.nav-list {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+/*hero*/
 .hero-title {
-  line-height: 1, 36;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
 }
-
+.hero-button {
+  color: var(--colorTextThird);
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+/*main*/
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 .advantages-item-text {
-  line-height: 1, 71;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--colorTextSecondary);
 }
-/* portfolio */
+/*work*/
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+/*team*/
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.teammate-name {
+  text-align: center;
+}
+.teammate-profession {
+  font-weight: 400;
+  text-align: center;
+  color: var(--colorTextSecondary);
+}
+/*footer*/
+.footer-link {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--colorLogoNavigation);
+}
+.address-list {
+  font-weight: 400;
+  font-size: 14px;
+}
+.adress-item-text {
+  color: var(--colorTextThird);
+}
+.address-link {
+  color: var(--addressColor);
+}
+/*portfolio*/
 .projects-button {
-  line-height: 1, 62;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--colorTextThird);
 }
 .projects-title {
+  font-weight: 700;
+  font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
-.projects-text {
-  line-height: 1, 87;
-}
-
-/* footer */
-.address-list {
-  line-height: 1, 71;
+.projects-category {
+  font-weight: 400;
+  line-height: 1.87;
+  color: var(--colorTextSecondary);
 }
