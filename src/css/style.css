@@ -8,6 +8,9 @@
   --addressColor: rgba(255, 255, 255, 0.6);
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
+  --backgroundNormal: #fff;
+  --backgroundSekond: #2f303a;
+  --backgroundThird: #f5f4fa;
 }
 /* body */
 body {
@@ -25,11 +28,23 @@ body {
   font-size: 26px;
   color: var(--colorLogoNavigation);
 }
+.logo-2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--colorTextPrimary);
+}
+.nav {
+  background-color: var(--backgroundNormal);
+}
 .nav-list {
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 /*hero*/
+.hero {
+  background-color: var(--backgroundSekond);
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -37,6 +52,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  color: var(--colorTextThird);
 }
 .hero-button {
   color: var(--colorTextThird);
@@ -63,6 +79,9 @@ body {
   text-align: center;
 }
 /*team*/
+.team {
+  background-color: var(--backgroundThird);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -77,6 +96,9 @@ body {
   color: var(--colorTextSecondary);
 }
 /*footer*/
+.footer {
+  background-color: var(--backgroundSekond);
+}
 .footer-link {
   font-family: var(--second-family);
   font-weight: 700;
