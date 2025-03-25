@@ -27,6 +27,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--colorLogoNavigation);
+  text-decoration: none;
 }
 .logo-2 {
   font-family: var(--second-family);
@@ -34,12 +35,36 @@ body {
   font-size: 26px;
   color: var(--colorTextPrimary);
 }
+.logo-3 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--colorTextThird);
+}
 .nav {
   background-color: var(--backgroundNormal);
 }
 .nav-list {
   font-size: 14px;
   letter-spacing: 0.02em;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--colorTextPrimary);
+}
+.nav-link:hover {
+  color: var(--colorLogoNavigation);
+  text-decoration: none;
+}
+.contact-link {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--backgroundSekond);
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: var(--colorLogoNavigation);
+  text-decoration: none;
 }
 /*hero*/
 .hero {
@@ -111,9 +136,12 @@ body {
 }
 .adress-item-text {
   color: var(--colorTextThird);
+  font-style: normal;
 }
 .address-link {
   color: var(--addressColor);
+  text-decoration: none;
+  font-style: normal;
 }
 /*portfolio*/
 .projects-button {
