@@ -27,7 +27,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--colorLogoNavigation);
-  text-decoration: none;
 }
 .logo-2 {
   font-family: var(--second-family);
@@ -49,22 +48,18 @@ body {
   letter-spacing: 0.02em;
 }
 .nav-link {
-  text-decoration: none;
   color: var(--colorTextPrimary);
 }
 .nav-link:hover {
   color: var(--colorLogoNavigation);
-  text-decoration: none;
 }
 .contact-link {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--backgroundSekond);
-  text-decoration: none;
 }
 .contact-link:hover {
   color: var(--colorLogoNavigation);
-  text-decoration: none;
 }
 /*hero*/
 .hero {
@@ -140,7 +135,6 @@ body {
 }
 .address-link {
   color: var(--addressColor);
-  text-decoration: none;
   font-style: normal;
 }
 /*portfolio*/
