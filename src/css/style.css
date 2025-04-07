@@ -154,7 +154,13 @@ body {
 .projects-button {
   line-height: 1.62;
   text-align: center;
+  color: var(--colorTextPrimary);
+}
+.projects-button:hover {
+  line-height: 1.62;
+  text-align: center;
   color: var(--colorTextThird);
+  background-color: var(--colorLogoNavigation);
 }
 .projects-title {
   font-weight: 700;
