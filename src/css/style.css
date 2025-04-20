@@ -32,6 +32,15 @@ body {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 93px;
 }
 .logo {
   font-family: var(--second-family);
@@ -53,16 +62,28 @@ body {
 }
 .nav {
   background-color: var(--backgroundNormal);
+  flex-grow: 1;
 }
 .nav-list {
   font-size: 14px;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 .nav-link {
   color: var(--colorTextPrimary);
 }
 .nav-link:hover {
   color: var(--colorLogoNavigation);
+}
+.spacer {
+  width: 344px;
+}
+.contact-list {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
 }
 .contact-link {
   font-size: 14px;
@@ -78,6 +99,12 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -86,17 +113,32 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--colorTextThird);
+  max-width: 696px;
 }
 .hero-button {
+  background-color: var(--colorLogoNavigation);
   color: var(--colorTextThird);
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
 }
+
 /*main*/
 .advantages {
   padding-top: 94px;
+}
+.div-advantages {
+  display: flex;
+  justify-content: center;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.advantages-item {
+  max-width: 270px;
 }
 .advantages-item-title {
   font-weight: 700;
@@ -113,10 +155,22 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+.div-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
+
+  margin-bottom: 50pxpx;
+}
+.work-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 /*team*/
 .team {
@@ -124,10 +178,21 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.div-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  text-align: center;
+}
+.team-list {
+  justify-content: space-between;
+}
+.team-item {
+  gap: 30px;
+  max-width: 270px;
 }
 .teammate-name {
   text-align: center;
