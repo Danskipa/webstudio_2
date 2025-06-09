@@ -32,9 +32,6 @@ body {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .div-header {
   display: flex;
@@ -269,7 +266,14 @@ body {
   flex-wrap: wrap;
   gap: 30px;
   padding-top: 34px;
-  padding-bottom: 94px;
+}
+.applications-item {
+  max-width: 370px;
+  max-height: 404px;
+  border: 1px solid #eeeeee;
+}
+.projects-container-text {
+  padding-left: 24px;
 }
 .projects-title {
   font-weight: 700;
@@ -281,4 +285,5 @@ body {
   font-weight: 400;
   line-height: 1.87;
   color: var(--colorTextSecondary);
+  padding-bottom: 20px;
 }
