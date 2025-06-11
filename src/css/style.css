@@ -140,12 +140,58 @@ body {
   gap: 30px;
 }
 .advantages-item {
-  max-width: 270px;
+  width: 270px;
+  height: 248px;
+}
+.advantages-item:nth-child(1)::before {
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-color: #f5f4fa;
+  background-image: url(../img/advantages/pc.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-item:nth-child(2)::before {
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-color: #f5f4fa;
+  background-image: url(../img/advantages/clock.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-item:nth-child(3)::before {
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-color: #f5f4fa;
+  background-image: url(../img/advantages/diagram-pc.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-item:nth-child(4)::before {
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-color: #f5f4fa;
+  background-image: url(../img/advantages/astronaut.svg);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .advantages-item-title {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 .advantages-item-text {
   font-weight: 400;
