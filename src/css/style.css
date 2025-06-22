@@ -313,6 +313,7 @@ body {
   gap: 30px;
   padding-top: 34px;
 }
+
 .applications-item {
   flex-basis: calc((100% - 60px) / 3);
   max-width: 370px;
