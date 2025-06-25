@@ -98,6 +98,7 @@ body {
   background-color: var(--backgroundSekond);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../img/backgroungimg/bg222.webp);
 }
 .hero-content {
   display: flex;
@@ -212,8 +213,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-
-  margin-bottom: 50pxpx;
+  padding-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -319,6 +319,9 @@ body {
   max-width: 370px;
   max-height: 404px;
   border: 1px solid #eeeeee;
+}
+.applications-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .projects-container-text {
   padding-left: 24px;
