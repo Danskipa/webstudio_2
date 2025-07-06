@@ -126,6 +126,9 @@ body {
   padding: 10px 32px;
   border-radius: 5px;
 }
+.hero-button:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
 
 /*main*/
 .advantages {
@@ -244,6 +247,9 @@ body {
   max-width: 270px;
   background-color: #ffffff;
 }
+.team-item:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
 .teammate-name {
   text-align: center;
 }
@@ -306,6 +312,7 @@ body {
   text-align: center;
   color: var(--colorTextThird);
   background-color: var(--colorLogoNavigation);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 .applications {
   display: flex;
@@ -321,7 +328,7 @@ body {
   border: 1px solid #eeeeee;
 }
 .applications-item:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }
 .projects-container-text {
   padding-left: 24px;
