@@ -89,8 +89,37 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--backgroundSekond);
+  display: flex;
+  align-items: center;
 }
-.contact-link:hover {
+.contact-icon {
+  height: 16px;
+  width: 12px;
+  fill: #757575;
+}
+.contact-link:hover .contact-icon {
+  fill: var(--colorLogoNavigation);
+}
+.contact-name {
+  padding-left: 10px;
+  color: #757575;
+}
+.contact-link:hover .contact-name {
+  color: var(--colorLogoNavigation);
+}
+.contact-icon2 {
+  height: 16px;
+  width: 10px;
+  fill: #757575;
+}
+.contact-link:hover .contact-icon2 {
+  fill: var(--colorLogoNavigation);
+}
+.contact-name2 {
+  padding-left: 10px;
+  color: #757575;
+}
+.contact-link:hover .contact-name2 {
   color: var(--colorLogoNavigation);
 }
 /*hero*/
@@ -246,6 +275,8 @@ body {
 .team-item {
   max-width: 270px;
   background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.164);
 }
 .team-item:hover {
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
@@ -257,7 +288,66 @@ body {
   font-weight: 400;
   text-align: center;
   color: var(--colorTextSecondary);
-  padding-bottom: 30px;
+  padding-bottom: 16px;
+}
+.teammate-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 42px;
+  gap: 10px;
+}
+.teammate-icon-item {
+  width: 44px;
+  height: 44px;
+}
+.teammate-link {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  fill: #afb1b8;
+}
+.teammate-link:hover {
+  background-color: var(--colorLogoNavigation);
+  fill: #ffffff;
+}
+.teammate-icon {
+  height: 20px;
+  width: 20px;
+}
+/*-------- clients-------- */
+.clients {
+  background-color: var(--backgroundNormal);
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-link {
+  width: 106px;
+  height: 60px;
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
 }
 /*footer*/
 .footer {
