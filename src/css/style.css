@@ -340,14 +340,32 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-item:hover {
+  border: 1px solid var(--colorLogoNavigation);
 }
 .clients-link {
-  width: 106px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  padding: 16px 32px;
+}
+.clients-link:hover .clients-icon {
+  fill: var(--colorLogoNavigation);
 }
 .clients-icon {
   width: 106px;
   height: 60px;
+}
+.clients-icon-yako {
+  border: 1px solid #afb1b8;
+}
+.clients-link:hover .clients-icon-yako {
+  border: 1px solid var(--colorLogoNavigation);
 }
 /*footer*/
 .footer {
@@ -363,10 +381,12 @@ body {
 }
 .address {
   padding-top: 20px;
+  display: flex;
 }
 .address-list {
   font-weight: 400;
   font-size: 14px;
+  width: 231px;
 }
 .adress-item-text {
   color: var(--colorTextThird);
@@ -378,6 +398,18 @@ body {
   font-style: normal;
   padding-bottom: 9px;
 }
+.footer-icon-list {
+  width: 206px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon {
+  width: 44px;
+  height: 44px;
+}
+
 /*portfolio*/
 .projects {
   padding-top: 94px;
