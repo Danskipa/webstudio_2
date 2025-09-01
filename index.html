@@ -54,7 +54,7 @@
                 <svg class="contact-icon2">
                   <use href="./src/img/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
-                <span class="contact-name">info@devstudio.com</span></a
+                <span class="contact-name">+38 096 111 11 11</span></a
               >
             </li>
           </ul>
@@ -67,6 +67,83 @@
           <div class="hero-content">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="hero-button" type="button">Замовити послугу</button>
+          </div>
+          <button class="btn-open" data-modal-open>open</button>
+          <!--  Окремо модальне вікно -->
+          <div class="backdrop" data-modal>
+            <div class="modal">
+              <!-- Кнопка закриття -->
+              <button type="button" class="modal__close" data-modal-close>
+                <svg class="modal-icon">
+                  <use
+                    href="./src/img/backdrop/symbol-defs.svg#icon-ro-cross"
+                  ></use>
+                </svg>
+              </button>
+              <div class="contact-form">
+                <h2 class="form-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
+                <form>
+                  <!-- Ім’я -->
+                  <label class="form-field">
+                    <span class="form-label">Ім’я</span>
+                    <div class="input-wrapper">
+                      <svg class="input-icon">
+                        <use
+                          href="./src/img/backdrop/symbol-defs.svg#icon-person-black"
+                        ></use>
+                      </svg>
+                      <input type="text" class="person" />
+                    </div>
+                  </label>
+                  <!-- Телефон -->
+                  <label class="form-field">
+                    <span class="form-label">Телефон</span>
+                    <div class="input-wrapper">
+                      <svg class="input-icon">
+                        <use
+                          href="./src/img/backdrop/symbol-defs.svg#icon-phone-black"
+                        ></use>
+                      </svg>
+                      <input type="tel" class="phone" />
+                    </div>
+                  </label>
+                  <!-- Пошта -->
+                  <label class="form-field">
+                    <span class="form-label">Пошта</span>
+                    <div class="input-wrapper">
+                      <svg class="input-icon">
+                        <use
+                          href="./src/img/backdrop/symbol-defs.svg#icon-email-black"
+                        ></use>
+                      </svg>
+                      <input type="email" class="email" />
+                    </div>
+                  </label>
+                  <!-- Коментар -->
+                  <label class="form-field">
+                    <span class="form-label">Коментар</span>
+                    <div class="input-wrapper">
+                      <textarea
+                        class="comment-text"
+                        placeholder="Введіть текст"
+                      ></textarea>
+                    </div>
+                  </label>
+                  <!-- Чекбокс -->
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>
+                      Погоджуюся з розсилкою та приймаю
+                      <a href="#">Умови договору</a>
+                    </span>
+                  </label>
+                  <!-- Кнопка -->
+                  <button type="submit" class="submit-btn">Відправити</button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -480,5 +557,6 @@
         </div>
       </div>
     </footer>
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
