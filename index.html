@@ -66,17 +66,17 @@
         <div class="container">
           <div class="hero-content">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
+            <button class="hero-button btn-open" type="button" data-modal-open>
+              Замовити послугу
+            </button>
           </div>
-          <button class="btn-open" data-modal-open>open</button>
-          <!--  Окремо модальне вікно -->
-          <div class="backdrop" data-modal>
+          <!---------- модальне вікно -->
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <!-- Кнопка закриття -->
               <button type="button" class="modal__close" data-modal-close>
                 <svg class="modal-icon">
                   <use
-                    href="./src/img/backdrop/symbol-defs.svg#icon-ro-cross"
+                    href="./src/img/backdrop/symbol-defs.svg#icon-close-black"
                   ></use>
                 </svg>
               </button>
@@ -85,7 +85,7 @@
                   Залиште свої дані, ми вам передзвонимо
                 </h2>
                 <form>
-                  <!-- Ім’я -->
+                  <!------ Ім’я ----->
                   <label class="form-field">
                     <span class="form-label">Ім’я</span>
                     <div class="input-wrapper">
@@ -97,7 +97,7 @@
                       <input type="text" class="person" />
                     </div>
                   </label>
-                  <!-- Телефон -->
+                  <!--- Телефон --->
                   <label class="form-field">
                     <span class="form-label">Телефон</span>
                     <div class="input-wrapper">
@@ -109,7 +109,7 @@
                       <input type="tel" class="phone" />
                     </div>
                   </label>
-                  <!-- Пошта -->
+                  <!----- Пошта-- -->
                   <label class="form-field">
                     <span class="form-label">Пошта</span>
                     <div class="input-wrapper">
@@ -134,12 +134,11 @@
                   <!-- Чекбокс -->
                   <label class="checkbox">
                     <input type="checkbox" />
-                    <span>
+                    <span class="checkbox">
                       Погоджуюся з розсилкою та приймаю
                       <a href="#">Умови договору</a>
                     </span>
                   </label>
-                  <!-- Кнопка -->
                   <button type="submit" class="submit-btn">Відправити</button>
                 </form>
               </div>
@@ -554,6 +553,14 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="container-email">
+          <h3 class="email-title">Підпишіться на розсилку</h3>
+          <label class="form-email">
+            <div class="input-email">
+              <p class="email-text" placeholder="Введіть текст"></p>
+            </div>
+          </label>
         </div>
       </div>
     </footer>
