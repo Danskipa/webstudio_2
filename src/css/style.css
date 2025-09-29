@@ -551,6 +551,34 @@ body {
   display: flex;
   flex-direction: column;
 }
+.projects-photo {
+  position: relative;
+  overflow: hidden;
+}
+.projects-photo:hover .projects-overlay {
+  transform: translateY(0%);
+  transition: transform 1s ease;
+}
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--colorTextThird);
+  background-color: var(--colorLogoNavigation);
+  opacity: 90%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 1s ease;
+}
+/* .projects-overlay:hover {
+  transform: translateY(0%);
+} */
 .filter-list {
   display: flex;
   gap: 8px;
