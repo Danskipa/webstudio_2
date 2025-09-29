@@ -86,51 +86,81 @@
                 </h2>
                 <form>
                   <!------ Ім’я ----->
-                  <label class="form-field">
-                    <span class="form-label">Ім’я</span>
-                    <div class="input-wrapper">
-                      <svg class="input-icon">
+                  <div class="form-field">
+                    <label class="form-field__label" for="username">Ім'я</label>
+                    <div class="form-field__content">
+                      <svg class="form-field__icon">
                         <use
                           href="./src/img/backdrop/symbol-defs.svg#icon-person-black"
                         ></use>
                       </svg>
-                      <input type="text" class="person" />
+                      <input
+                        class="form-field__input"
+                        id="username"
+                        name="name"
+                        minlength="3"
+                        type="text"
+                        required
+                      />
                     </div>
-                  </label>
+                  </div>
                   <!--- Телефон --->
-                  <label class="form-field">
-                    <span class="form-label">Телефон</span>
-                    <div class="input-wrapper">
-                      <svg class="input-icon">
+                  <div class="form-field">
+                    <label class="form-field__label" for="username"
+                      >Телефон</label
+                    >
+                    <div class="form-field__content">
+                      <svg class="form-field__icon">
                         <use
                           href="./src/img/backdrop/symbol-defs.svg#icon-phone-black"
                         ></use>
                       </svg>
-                      <input type="tel" class="phone" />
+                      <input
+                        class="form-field__input"
+                        id="username"
+                        name="name"
+                        minlength="3"
+                        type="text"
+                        required
+                      />
                     </div>
-                  </label>
+                  </div>
+
                   <!----- Пошта-- -->
-                  <label class="form-field">
-                    <span class="form-label">Пошта</span>
-                    <div class="input-wrapper">
-                      <svg class="input-icon">
+                  <div class="form-field">
+                    <label class="form-field__label" for="username"
+                      >Пошта</label
+                    >
+                    <div class="form-field__content">
+                      <svg class="form-field__icon">
                         <use
                           href="./src/img/backdrop/symbol-defs.svg#icon-email-black"
                         ></use>
                       </svg>
-                      <input type="email" class="email" />
+                      <input
+                        class="form-field__input"
+                        id="username"
+                        name="name"
+                        minlength="3"
+                        type="text"
+                        required
+                      />
                     </div>
-                  </label>
+                  </div>
+
                   <!-- Коментар -->
-                  <label class="form-field">
-                    <span class="form-label">Коментар</span>
-                    <div class="input-wrapper">
+                  <div class="form-comment">
+                    <label class="form-field__label" for="username"
+                      >Коментар</label
+                    >
+                    <div class="form-comment__content">
                       <textarea
                         class="comment-text"
                         placeholder="Введіть текст"
                       ></textarea>
                     </div>
-                  </label>
+                  </div>
+
                   <!-- Чекбокс -->
                   <label class="checkbox">
                     <input type="checkbox" />
