@@ -43,6 +43,12 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--colorLogoNavigation);
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo:hover {
+  transform: scale(1.125);
 }
 .logo-2 {
   font-family: var(--second-family);
@@ -74,20 +80,30 @@ body {
 .nav-link {
   color: var(--colorTextPrimary);
   position: relative;
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover {
   color: var(--colorLogoNavigation);
 }
-.nav-link:hover::after {
+.nav-link::after {
   content: "";
   width: 100%;
   height: 3px;
   background-color: var(--colorLogoNavigation);
   position: absolute;
   left: 0;
-  bottom: -39px;
-  /* opacity: 0; */
+  opacity: 0;
   border-radius: 2px;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(20px);
+}
+.nav-link:hover::after {
+  opacity: 1;
+  transform: translateY(56px);
 }
 
 .contact-list {
@@ -106,6 +122,9 @@ body {
   height: 16px;
   width: 12px;
   fill: #757575;
+  transition-property: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover .contact-icon {
   fill: var(--colorLogoNavigation);
@@ -113,6 +132,9 @@ body {
 .contact-name {
   padding-left: 10px;
   color: #757575;
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover .contact-name {
   color: var(--colorLogoNavigation);
@@ -125,9 +147,9 @@ body {
 .contact-link:hover .contact-icon2 {
   fill: var(--colorLogoNavigation);
 }
-.contact-link:hover .contact-name2 {
+/* .contact-link:hover .contact-name2 {
   color: var(--colorLogoNavigation);
-}
+} */
 /*hero*/
 .hero {
   background-color: var(--backgroundSekond);
@@ -283,10 +305,13 @@ body {
   background: rgba(47, 48, 58, 0.8);
   padding: 27px;
   z-index: 2;
-  display: none;
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100px);
 }
 .work-photo:hover .work-caption {
-  display: block;
+  transform: translateY(0px);
 }
 /*team*/
 .team {
@@ -313,6 +338,9 @@ body {
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.164);
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-item:hover {
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
@@ -343,6 +371,9 @@ body {
   display: flex;
   align-items: center;
   fill: #afb1b8;
+  transition-property: fill, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammate-link:hover {
   background-color: var(--colorLogoNavigation);
@@ -379,6 +410,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: border;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:hover {
   border: 1px solid var(--colorLogoNavigation);
@@ -390,18 +424,23 @@ body {
   fill: #afb1b8;
   padding: 16px 32px;
 }
-.clients-link:hover .clients-icon {
-  fill: var(--colorLogoNavigation);
-}
 .clients-icon {
-  width: 106px;
-  height: 60px;
+  transition-property: fill, border;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon-yako {
   border: 1px solid #afb1b8;
 }
 .clients-link:hover .clients-icon-yako {
   border: 1px solid var(--colorLogoNavigation);
+}
+.clients-link:hover .clients-icon {
+  fill: var(--colorLogoNavigation);
+}
+.clients-icon {
+  width: 106px;
+  height: 60px;
 }
 /*footer*/
 .footer {
@@ -472,6 +511,9 @@ body {
   align-items: center;
   fill: var(--backgroundThird);
   background-color: hsla(0, 0%, 100%, 0.1);
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover {
   background-color: var(--colorLogoNavigation);
@@ -539,6 +581,13 @@ body {
   background-color: var(--colorLogoNavigation);
   border-radius: 4px;
   fill: var(--colorTextThird);
+  transition-property: transform, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
 }
 .footer-icon {
   width: 24px;
@@ -551,34 +600,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.projects-photo {
-  position: relative;
-  overflow: hidden;
-}
-.projects-photo:hover .projects-overlay {
-  transform: translateY(0%);
-  transition: transform 1s ease;
-}
-.projects-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--colorTextThird);
-  background-color: var(--colorLogoNavigation);
-  opacity: 90%;
-  padding: 63px 24px;
-  transform: translateY(100%);
-  transition: transform 1s ease;
-}
-/* .projects-overlay:hover {
-  transform: translateY(0%);
-} */
 .filter-list {
   display: flex;
   gap: 8px;
@@ -590,6 +611,9 @@ body {
   color: var(--colorTextPrimary);
   padding: 6px 22px;
   border-radius: 5px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-button:hover {
   line-height: 1.62;
@@ -613,6 +637,32 @@ body {
 }
 .applications-item:hover {
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+.projects-photo {
+  position: relative;
+  overflow: hidden;
+}
+.projects-photo:hover .projects-overlay {
+  transform: translateY(0%);
+}
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--colorTextThird);
+  background-color: var(--colorLogoNavigation);
+  opacity: 90%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-container-text {
   padding-left: 24px;
@@ -664,6 +714,9 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: #000000;
+  transition-property: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close:hover {
   fill: var(--colorLogoNavigation);
@@ -719,6 +772,9 @@ body {
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field__content input:focus {
   border-color: var(--colorLogoNavigation);
@@ -732,6 +788,9 @@ body {
   fill: #555;
   width: 18px;
   height: 18px;
+  transition-property: fill;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* neprazyue */
 .form-field__icon:focus {
@@ -755,12 +814,14 @@ body {
   font-size: 12px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  transition-property: border-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment-text:focus {
   border-color: var(--colorLogoNavigation);
   outline: none;
 }
-
 .checkbox {
   display: flex;
   align-items: center;
@@ -773,6 +834,12 @@ body {
 }
 .checkbox a {
   color: var(--colorLogoNavigation);
+  transition-property: color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox a:hover {
+  color: #3071a7;
 }
 
 .submit-btn {
@@ -780,7 +847,7 @@ body {
   width: 200px;
   height: 50px;
   padding: 12px;
-  background: #2196f3;
+  background-color: #2196f3;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -789,10 +856,13 @@ body {
   position: relative;
   left: 25%;
   margin-top: 30px;
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-btn:hover {
-  background: #1976d2;
+  background-color: #1976d2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
