@@ -1,0 +1,69 @@
+.team {
+  background-color: var(--backgroundThird);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.div-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-item {
+  max-width: 270px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.164);
+  transition-property: box-shadow;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-item:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+.teammate-name {
+  text-align: center;
+}
+.teammate-profession {
+  font-weight: 400;
+  text-align: center;
+  color: var(--colorTextSecondary);
+  padding-bottom: 16px;
+}
+.teammate-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 42px;
+  gap: 10px;
+}
+.teammate-icon-item {
+  width: 44px;
+  height: 44px;
+}
+.teammate-link {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  fill: #afb1b8;
+  transition-property: fill, background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.teammate-link:hover {
+  background-color: var(--colorLogoNavigation);
+  fill: #ffffff;
+}
+.teammate-icon {
+  height: 20px;
+  width: 20px;
+}
