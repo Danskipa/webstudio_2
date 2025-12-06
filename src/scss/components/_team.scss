@@ -3,21 +3,21 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.div-team {
+.div__team {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.team-title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   padding-bottom: 50px;
 }
-.team-list {
+.team__list {
   display: flex;
   gap: 30px;
 }
-.team-item {
+.team__item {
   max-width: 270px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -25,31 +25,32 @@
   transition-property: box-shadow;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+  }
 }
-.team-item:hover {
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
-}
-.teammate-name {
+
+.teammate__name {
   text-align: center;
 }
-.teammate-profession {
+.teammate__profession {
   font-weight: 400;
   text-align: center;
   color: var(--colorTextSecondary);
   padding-bottom: 16px;
 }
-.teammate-icon-list {
+.teammate__icon--list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 42px;
   gap: 10px;
 }
-.teammate-icon-item {
+.teammate__icon--item {
   width: 44px;
   height: 44px;
 }
-.teammate-link {
+.teammate__link {
   padding: 12px;
   border-radius: 50%;
   display: flex;
@@ -58,12 +59,13 @@
   transition-property: fill, background-color;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--colorLogoNavigation);
+    fill: #ffffff;
+  }
 }
-.teammate-link:hover {
-  background-color: var(--colorLogoNavigation);
-  fill: #ffffff;
-}
-.teammate-icon {
+
+.teammate__icon {
   height: 20px;
   width: 20px;
 }

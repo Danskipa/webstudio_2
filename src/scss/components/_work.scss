@@ -2,33 +2,36 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.div-work {
+.div__work {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.work-title {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   padding-bottom: 50px;
 }
-.work-list {
+.work__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.work-photo {
+.work__photo {
   position: relative;
   overflow: hidden;
+  &:hover .work__caption {
+    transform: translateY(0px);
+  }
 }
 
-.work-img {
+.work__img {
   display: block;
   width: 100%;
   height: auto;
 }
-.work-caption {
+.work__caption {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
@@ -47,7 +50,4 @@
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100px);
-}
-.work-photo:hover .work-caption {
-  transform: translateY(0px);
 }

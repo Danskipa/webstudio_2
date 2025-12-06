@@ -4,13 +4,13 @@
   padding-bottom: 200px;
   background-image: url(../img/backgroungimg/bg222.webp);
 }
-.hero-content {
+.hero__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -20,7 +20,7 @@
   color: var(--colorTextThird);
   max-width: 696px;
 }
-.hero-button {
+.hero__button {
   background-color: var(--colorLogoNavigation);
   color: var(--colorTextThird);
   font-weight: 700;
@@ -32,8 +32,8 @@
   transition-property: box-shadow, transform;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-button:hover {
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.1);
+  &:hover {
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
 }

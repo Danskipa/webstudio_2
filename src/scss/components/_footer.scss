@@ -3,14 +3,14 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container {
+.footer__container {
   display: flex;
 }
-.container-adress {
+.container__adress {
   display: flex;
   flex-direction: column;
 }
-.footer-link {
+.footer__link {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 26px;
@@ -19,26 +19,26 @@
 .address {
   padding-top: 20px;
 }
-.address-list {
+.address__list {
   font-weight: 400;
   font-size: 14px;
   width: 231px;
 }
-.adress-item-text {
+.adress__item--text {
   color: var(--colorTextThird);
   font-style: normal;
   padding-bottom: 9px;
 }
-.address-link {
+.address__link {
   color: var(--addressColor);
   font-style: normal;
   padding-bottom: 9px;
 }
-.container-networks {
+.container__networks {
   display: flex;
   flex-direction: column;
 }
-.footer-icon-text {
+.footer__icon--text {
   margin-left: 70px;
   font-family: var(--font-family);
   font-weight: 700;
@@ -46,7 +46,7 @@
   text-transform: uppercase;
   color: var(--backgroundThird);
 }
-.footer-icon-list {
+.footer__icon--list {
   width: 206px;
   height: 80px;
   display: flex;
@@ -55,11 +55,11 @@
   margin-left: 70px;
   gap: 10px;
 }
-.footer-icon-item {
+.footer__icon--item {
   width: 44px;
   height: 44px;
 }
-.footer-link {
+.footer__link {
   padding: 12px;
   border-radius: 50%;
   display: flex;
@@ -69,26 +69,27 @@
   transition-property: background-color;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--colorLogoNavigation);
+  }
 }
-.footer-link:hover {
-  background-color: var(--colorLogoNavigation);
-}
-.footer-icon {
+
+.footer__icon {
   height: 20px;
   width: 20px;
 }
 
-.container-email {
+.container__email {
   display: flex;
   margin-left: 93px;
   width: 570px;
   height: 86px;
 }
-.group-email {
+.group__email {
   display: flex;
   flex-direction: column;
 }
-.email-title {
+.email__title {
   width: 209px;
   height: 16px;
   font-family: var(--font-family);
@@ -98,14 +99,12 @@
   color: var(--colorTextThird);
   margin-bottom: 20px;
 }
-.input-email {
+.input__email {
   width: 358px;
   height: 50px;
-  /* border: 1px solid #ccc;
-  border-radius: 4px; */
 }
 
-.email-text {
+.email__text {
   height: 50px;
   width: 100%;
   font-size: 14px;
@@ -122,7 +121,7 @@
   padding-left: 16px;
 }
 
-.email-button {
+.email__button {
   width: 200px;
   height: 50px;
   margin-left: 12px;
@@ -139,12 +138,13 @@
   transition-property: transform, box-shadow;
   transition-duration: 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  }
 }
-.email-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
-}
-.footer-icon {
+
+.footer__icon {
   width: 24px;
   height: 24px;
 }
